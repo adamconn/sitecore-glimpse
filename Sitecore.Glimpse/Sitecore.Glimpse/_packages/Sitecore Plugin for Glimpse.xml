@@ -1,0 +1,76 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sitecore Plugin for Glimpse</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>Sitecore Plugin for Glimpse
+
+--------------------------------------------------------
+PREREQUISITES
+
+•  .NET Framework 4.5
+•  Glimpse 1.6.0
+•  Sitecore CMS 7.0 (or later)
+•  Sitecore DMS 7.0 (or later)
+
+--------------------------------------------------------
+POST INSTALLATION STEPS
+
+1. Add the following to web.config in order to prevent 
+   Glimpse from running the the Sitecore Client.
+
+  &lt;glimpse defaultRuntimePolicy="On" endpointBaseUri="~/Glimpse.axd"&gt;
+    &lt;runtimePolicies&gt;
+      &lt;ignoredTypes&gt;
+        &lt;add type="Glimpse.AspNet.Policy.LocalPolicy, Glimpse.AspNet"/&gt;
+      &lt;/ignoredTypes&gt;
+      &lt;uris&gt;
+        &lt;add regex="/sitecore/.*" /&gt;
+      &lt;/uris&gt;
+    &lt;/runtimePolicies&gt;
+  &lt;/glimpse&gt;
+
+--------------------------------------------------------
+FOR MORE INFORMATION
+•  https://github.com/adamconn/sitecore-glimpse/wiki
+
+
+
+</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Glimpse.config</x-item>
+        <x-item>/bin/Sitecore.Glimpse.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

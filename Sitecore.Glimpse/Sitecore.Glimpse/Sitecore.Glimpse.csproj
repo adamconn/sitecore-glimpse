@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57ABB8F2-96BB-415D-8A85-B6970202003E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Glimpse</RootNamespace>
+    <AssemblyName>Sitecore.Glimpse</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Glimpse.AspNet">
+      <HintPath>bin\Glimpse.AspNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Glimpse.Core">
+      <HintPath>bin\Glimpse.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>bin\Sitecore.Analytics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>bin\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AnalyticsModel.cs" />
+    <Compile Include="Model\AnalyticsModelConverter.cs" />
+    <Compile Include="Model\ContextModel.cs" />
+    <Compile Include="Model\ContextModelConverter.cs" />
+    <Compile Include="Model\PageModel.cs" />
+    <Compile Include="Model\PageModelConverter.cs" />
+    <Compile Include="Model\PipelineModelConverter.cs" />
+    <Compile Include="Model\ProfilesModel.cs" />
+    <Compile Include="Model\ProfilesModelConverter.cs" />
+    <Compile Include="Model\RawOutputSectionModel.cs" />
+    <Compile Include="Model\SectionModel.cs" />
+    <Compile Include="Pipelines\BaseGetSection.cs" />
+    <Compile Include="Pipelines\BaseInitTabLayout.cs" />
+    <Compile Include="Pipelines\BaseInitTabObject.cs" />
+    <Compile Include="Pipelines\BaseSetSectionHandlers.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\GetBrowserSection.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\GetCurrentVisitSection.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\GetGeneralSection.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\GetGeoIpSection.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\GetGoalsSection.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\GetVisitorSection.cs" />
+    <Compile Include="Pipelines\ConvertAnalyticsModel\InitTabObject.cs" />
+    <Compile Include="Pipelines\ConvertContextModel\GetGeneralSection.cs" />
+    <Compile Include="Pipelines\ConvertContextModel\GetItemSection.cs" />
+    <Compile Include="Pipelines\ConvertContextModel\GetPageSection.cs" />
+    <Compile Include="Pipelines\ConvertContextModel\GetProfileSection.cs" />
+    <Compile Include="Pipelines\ConvertContextModel\GetUserSection.cs" />
+    <Compile Include="Pipelines\ConvertContextModel\InitTabObject.cs" />
+    <Compile Include="Pipelines\ConvertPageModel\GetGeneralSection.cs" />
+    <Compile Include="Pipelines\ConvertPageModel\GetRenderingsSection.cs" />
+    <Compile Include="Pipelines\ConvertPageModel\InitTabObject.cs" />
+    <Compile Include="Pipelines\ConvertProfilesModel\GetProfileSections.cs" />
+    <Compile Include="Pipelines\ConvertProfilesModel\InitTabObject.cs" />
+    <Compile Include="Pipelines\GetAnalyticsTabData\GetAnalyticsModel.cs" />
+    <Compile Include="Pipelines\GetAnalyticsTabData\LoadAnalyticsData.cs" />
+    <Compile Include="Pipelines\GetContextTabData\GetContextModel.cs" />
+    <Compile Include="Pipelines\GetPageTabData\GetPageModel.cs" />
+    <Compile Include="Pipelines\GetProfilesTabData\GetProfilesModel.cs" />
+    <Compile Include="Pipelines\GetProfilesTabData\LoadProfilesData.cs" />
+    <Compile Include="Pipelines\GlimpsePipelineArgs.cs" />
+    <Compile Include="Pipelines\IGetSectionProcessor.cs" />
+    <Compile Include="Pipelines\InitAnalyticsTabLayout\InitTabLayout.cs" />
+    <Compile Include="Pipelines\InitAnalyticsTabLayout\SetGoalsSectionHandlers.cs" />
+    <Compile Include="Pipelines\InitAnalyticsTabLayout\SetSectionHandlers.cs" />
+    <Compile Include="Pipelines\InitContextTabLayout\InitTabLayout.cs" />
+    <Compile Include="Pipelines\InitContextTabLayout\SetSectionHandlers.cs" />
+    <Compile Include="Pipelines\InitPageTabLayout\InitTabLayout.cs" />
+    <Compile Include="Pipelines\InitPageTabLayout\SetRenderingsSectionHandlers.cs" />
+    <Compile Include="Pipelines\InitPageTabLayout\SetSectionHandlers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tabs\BaseSitecoreTab.cs" />
+    <Compile Include="Tabs\PipelineTab.cs" />
+    <Compile Include="Tabs\SitecoreAnalyticsTab.cs" />
+    <Compile Include="Tabs\SitecoreContextTab.cs" />
+    <Compile Include="Tabs\SitecorePageTab.cs" />
+    <Compile Include="Tabs\SitecoreProfilesTab.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Config\Include\Sitecore.Glimpse.config" />
+    <None Include="_packages\Sitecore Plugin for Glimpse 1.0 rev. 130902.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_packages\Sitecore Plugin for Glimpse.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)App_Config\Include\*.config" Z:\Sitecore\Website\App_Config\Include
+copy "$(TargetDir)*" Z:\Sitecore\Website\bin</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
