@@ -12,7 +12,7 @@
         /// </summary>
         public MvcPageModel()
         {
-            this.Layout = Sitecore.Context.Page.FilePath;
+            this.Layout = Context.Page.FilePath;
             this.Page = PageContext.Current;
         }
 
