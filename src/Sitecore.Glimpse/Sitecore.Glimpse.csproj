@@ -115,10 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Sitecore.Glimpse.config" />
-    <None Include="_packages\Sitecore Plugin for Glimpse 1.0 rev. 130902.zip" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="_packages\Sitecore Plugin for Glimpse.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
