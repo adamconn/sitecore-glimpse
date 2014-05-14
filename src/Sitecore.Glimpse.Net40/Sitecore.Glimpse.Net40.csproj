@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Sitecore.Glimpse\**\*.config">
+    <None Include="..\Sitecore.Glimpse\**\*.config" Exclude="..\Sitecore.Glimpse\**\packages.config">
       <Link>%(RecursiveDir)%(FileName)</Link>
     </None>
     <Compile Include="..\Sitecore.Glimpse\**\*.cs" Exclude="..\Sitecore.Glimpse\Properties\AssemblyInfo.cs;..\Sitecore.Glimpse\**\obj\**\*.cs">
