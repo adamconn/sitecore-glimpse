@@ -42,6 +42,9 @@
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\lib\Sitecore\net40\Sitecore.Kernel.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\lib\Sitecore\net40\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />

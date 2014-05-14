@@ -42,6 +42,9 @@
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\lib\Sitecore\net45\Sitecore.Kernel.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\lib\Sitecore\net45\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -56,6 +59,8 @@
     <Compile Include="Model\AnalyticsModelConverter.cs" />
     <Compile Include="Model\ContextModel.cs" />
     <Compile Include="Model\ContextModelConverter.cs" />
+    <Compile Include="Model\MvcPageModel.cs" />
+    <Compile Include="Model\MvcPageModelConverter.cs" />
     <Compile Include="Model\PageModel.cs" />
     <Compile Include="Model\PageModelConverter.cs" />
     <Compile Include="Model\PipelineModelConverter.cs" />
@@ -80,6 +85,9 @@
     <Compile Include="Pipelines\ConvertContextModel\GetProfileSection.cs" />
     <Compile Include="Pipelines\ConvertContextModel\GetUserSection.cs" />
     <Compile Include="Pipelines\ConvertContextModel\InitTabObject.cs" />
+    <Compile Include="Pipelines\ConvertMvcPageModel\GetGeneralSection.cs" />
+    <Compile Include="Pipelines\ConvertMvcPageModel\GetRenderingsSection.cs" />
+    <Compile Include="Pipelines\ConvertMvcPageModel\InitTabObject.cs" />
     <Compile Include="Pipelines\ConvertPageModel\GetGeneralSection.cs" />
     <Compile Include="Pipelines\ConvertPageModel\GetRenderingsSection.cs" />
     <Compile Include="Pipelines\ConvertPageModel\InitTabObject.cs" />
@@ -88,6 +96,7 @@
     <Compile Include="Pipelines\GetAnalyticsTabData\GetAnalyticsModel.cs" />
     <Compile Include="Pipelines\GetAnalyticsTabData\LoadAnalyticsData.cs" />
     <Compile Include="Pipelines\GetContextTabData\GetContextModel.cs" />
+    <Compile Include="Pipelines\GetMvcPageTabData\GetMvcPageModel.cs" />
     <Compile Include="Pipelines\GetPageTabData\GetPageModel.cs" />
     <Compile Include="Pipelines\GetProfilesTabData\GetProfilesModel.cs" />
     <Compile Include="Pipelines\GetProfilesTabData\LoadProfilesData.cs" />
@@ -98,6 +107,9 @@
     <Compile Include="Pipelines\InitAnalyticsTabLayout\SetSectionHandlers.cs" />
     <Compile Include="Pipelines\InitContextTabLayout\InitTabLayout.cs" />
     <Compile Include="Pipelines\InitContextTabLayout\SetSectionHandlers.cs" />
+    <Compile Include="Pipelines\InitMvcPageTabLayout\InitTabLayout.cs" />
+    <Compile Include="Pipelines\InitMvcPageTabLayout\SetRenderingsSectionHandlers.cs" />
+    <Compile Include="Pipelines\InitMvcPageTabLayout\SetSectionHandlers.cs" />
     <Compile Include="Pipelines\InitPageTabLayout\InitTabLayout.cs" />
     <Compile Include="Pipelines\InitPageTabLayout\SetRenderingsSectionHandlers.cs" />
     <Compile Include="Pipelines\InitPageTabLayout\SetSectionHandlers.cs" />
@@ -106,6 +118,7 @@
     <Compile Include="Tabs\PipelineTab.cs" />
     <Compile Include="Tabs\SitecoreAnalyticsTab.cs" />
     <Compile Include="Tabs\SitecoreContextTab.cs" />
+    <Compile Include="Tabs\SitecoreMvcPageTab.cs" />
     <Compile Include="Tabs\SitecorePageTab.cs" />
     <Compile Include="Tabs\SitecoreProfilesTab.cs" />
   </ItemGroup>
