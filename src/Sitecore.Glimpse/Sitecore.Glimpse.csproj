@@ -31,12 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Glimpse.AspNet">
-      <HintPath>bin\Glimpse.AspNet.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\packages\Glimpse.AspNet.1.9.0\lib\net45\Glimpse.AspNet.dll</HintPath>
     </Reference>
     <Reference Include="Glimpse.Core">
-      <HintPath>bin\Glimpse.Core.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\packages\Glimpse.1.8.5\lib\net45\Glimpse.Core.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\..\lib\Sitecore\net45\Sitecore.Analytics.dll</HintPath>
@@ -113,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Sitecore.Glimpse.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
