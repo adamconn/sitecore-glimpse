@@ -39,12 +39,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics">
-      <HintPath>bin\Sitecore.Analytics.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\lib\Sitecore\net45\Sitecore.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>bin\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\lib\Sitecore\net45\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
