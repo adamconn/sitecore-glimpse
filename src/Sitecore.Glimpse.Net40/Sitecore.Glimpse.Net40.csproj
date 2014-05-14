@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,7 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Sitecore.Glimpse\**\*.cs;..\Sitecore.Glimpse\**\*.config" Exclude="..\Sitecore.Glimpse\Properties\AssemblyInfo.cs;..\Sitecore.Glimpse\**\obj\**\*.cs">
+    <None Include="..\Sitecore.Glimpse\**\*.config">
+      <Link>%(RecursiveDir)%(FileName)</Link>
+    </None>
+    <Compile Include="..\Sitecore.Glimpse\**\*.cs" Exclude="..\Sitecore.Glimpse\Properties\AssemblyInfo.cs;..\Sitecore.Glimpse\**\obj\**\*.cs">
       <Link>%(RecursiveDir)%(FileName)</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
