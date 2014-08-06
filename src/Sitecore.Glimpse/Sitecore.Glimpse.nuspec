@@ -1,22 +1,17 @@
 <?xml version="1.0"?>
 <package >
 	<metadata>
-		<id>$id$</id>
+		<id>Sitecore.Glimpse.Sitecore6</id>
 		<version>$version$</version>
+        <title>Sitecore Glimpse (Sitecore 6)</title>
 		<authors>Adam Conn, Tobias Studer</authors>
 		<projectUrl>https://github.com/adamconn/sitecore-glimpse</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Sitecore plugin for Glimpse</description>
 		<copyright>$copyright$</copyright>
 		<tags>Sitecore Glimpse</tags>
-		<dependencies> 
-			<group>
-				<dependency id="Glimpse" />
-				<dependency id="Glimpse.AspNet" />
-			</group>
-		</dependencies>
 	</metadata>
 	<files>
-		<file src="..\Sitecore.Glimpse.Net40\bin\$configuration$\*.Net40.*" target="lib/net40" />
+		<file src="\App_Config\Include\*.config" target="content/App_Config/Include" />
 	</files>
 </package>
