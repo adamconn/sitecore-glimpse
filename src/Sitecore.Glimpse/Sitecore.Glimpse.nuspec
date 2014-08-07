@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
 	<metadata>
-		<id>Glimpse.Sitecore6</id>
+		<id>Glimpse.Sitecore7</id>
 		<version>$version$</version>
-        <title>Sitecore Glimpse (Sitecore 6)</title>
+        <title>Sitecore Glimpse (Sitecore 7)</title>
 		<authors>Adam Conn, Tobias Studer</authors>
 		<projectUrl>https://github.com/adamconn/sitecore-glimpse</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
