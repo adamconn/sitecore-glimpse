@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>Glimpse.Sitecore6</id>
+		<version>$version$</version>
+        <title>Sitecore Glimpse (Sitecore 6)</title>
+		<authors>Adam Conn, Tobias Studer</authors>
+		<projectUrl>https://github.com/adamconn/sitecore-glimpse</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Sitecore plugin for Glimpse</description>
+		<copyright>$copyright$</copyright>
+		<tags>Sitecore Glimpse</tags>
+	</metadata>
+	<files>
+		<file src="\App_Config\Include\*.config" target="content/App_Config/Include" />
+		<file src="..\..\docs\readme.txt" target="" />
+	</files>
+</package>

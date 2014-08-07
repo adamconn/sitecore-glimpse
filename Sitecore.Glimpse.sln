@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Glimpse", "Sitecore.Glimpse\Sitecore.Glimpse.csproj", "{57ABB8F2-96BB-415D-8A85-B6970202003E}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Glimpse", "src\Sitecore.Glimpse\Sitecore.Glimpse.csproj", "{57ABB8F2-96BB-415D-8A85-B6970202003E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
