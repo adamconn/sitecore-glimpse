@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
 	<metadata>
-		<id>Sitecore.Glimpse.Sitecore6</id>
+		<id>Glimpse.Sitecore6</id>
 		<version>$version$</version>
         <title>Sitecore Glimpse (Sitecore 6)</title>
 		<authors>Adam Conn, Tobias Studer</authors>
